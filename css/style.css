@@ -1,4 +1,8 @@
-
+.icon-link {
+  display: inline-block; 
+  text-decoration: none; 
+  color: inherit; 
+}
 body {
   background: #fff;
   color: #666666;
@@ -557,7 +561,7 @@ section {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
+  background: url(../img/ram-idol.png) center top no-repeat;
   margin-bottom: 10px;
 }
 
@@ -777,8 +781,8 @@ section {
 
 #minicircle {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   position: absolute;
   z-index: 99999;
   border-radius: 50%;
