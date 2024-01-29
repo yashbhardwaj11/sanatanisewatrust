@@ -15,13 +15,22 @@ function translate(language) {
         element.textContent = translations[key] || key;
       });
 
-      // Save selected language as a cookie
+      
       document.cookie = `selectedLanguage=${language}; path=/`;
     })
     .catch((error) => console.error(error));
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function() {
+    document.getElementById('hiddenBanner').style.display = 'block';
+  }, 5000);
+
+  function closeBanner() {
+    document.getElementById('hiddenBanner').style.display = 'none';
+  }
+  document.getElementById("closeButton").addEventListener("click",()=>{closeBanner()})
+  const languageSelector = document.getElementById("languageSelector");
   const form = document.querySelector("#form");
   const submitButton = form.querySelector("button[type='submit']");
   const scriptURL =
@@ -30,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const selectedLanguage = getCookie("selectedLanguage");
   if (selectedLanguage) {
     translate(selectedLanguage);
+    languageSelector.value = selectedLanguage;
   }
 
   form.addEventListener("submit", function (e) {
@@ -56,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
-  const languageSelector = document.getElementById("languageSelector");
 
   languageSelector.addEventListener("change", function () {
     translate(this.value);

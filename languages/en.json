@@ -1,10 +1,10 @@
 {
-    "mainHeading" : "WELCOME TO SANATANI SEWA SAMITI",
-    "logo" : "SANATANI SEWA SAMITI",
+    "mainHeading" : "WELCOME TO SANATANI SEWA Trust",
+    "logo" : "SANATANI SEWA Trust",
     "secondHeading" : "Non Profit Organisation",
     "aboutButton" : "Get Started",
     "aboutHeading" : "Few Words About Us",
-    "aboutDesc" : "In the heart of Ayodhya, our hotel, founded by Alok Aggarwal, Jitesh Goel, and Arun Sharma, stands as a testament to a perfect blend of business and spirituality. Located within a 5km radius of the Ram Mandir, we offer modern amenities including a Kirtan Hall, 100 rooms, a subsidized diagnostic center, Gaushala, and Sita Rasoi serving Satvik food 24/7. Centrally positioned between Gupta Chat and the Ram Mandir, our hotel is the ideal choice for spiritual seekers alike. Welcome to a haven where every detail reflects our commitment to excellence.",
+    "aboutDesc" : "In the heart of Ayodhya, our Dharamsala, founded by Alok Aggarwal, Jitesh Goel, and Arun Sharma, stands as a testament to a perfect blend of business and spirituality. Located within a 5km radius of the Ram Mandir, we offer modern amenities including a Kirtan Hall, 100 rooms, a subsidized diagnostic center, Gaushala, and Sita Rasoi serving Satvik food 24/7. Centrally positioned between Guptar Ghat and the Ram Mandir, our Dharamshala is the ideal choice for spiritual seekers alike. Welcome to a haven where every detail reflects our commitment to excellence.",
     "home":"Home",
     "about":"About",
     "facilities":"Facilities",
@@ -24,8 +24,12 @@
     "parking":"SEAMLESS PARKING",
     "parkingDesc":"Enjoy a worry-free stay with our secure and spacious parking area. Your convenience is our priority, ensuring a hassle-free experience from the moment you arrive.",
     "location":"SERENE LOCATION - SARYU RIVERFRONT",
-    "locationDesc":"Delight in the picturesque views along the Saryu Riverfront. Our hotel's serene location provides a tranquil backdrop for a truly peaceful stay",
-    "location2":"CENTRAL CONVENIENCE - BETWEEN GUPTA CHAT AND RAM MANDIR",
-    "location2Desc":"Positioned strategically between Gupta Chat and the revered Ram Mandir, our hotel is a central hub for spiritual seekers and business travelers alike. Convenience meets divine serenity in the heart of Ayodhya."
-
+    "locationDesc":"Delight in the picturesque views along the Saryu Riverfront. Our Dharamshala's serene location provides a tranquil backdrop for a truly peaceful stay",
+    "location2":"CENTRAL CONVENIENCE - BETWEEN GUPTAR GHAT AND RAM MANDIR",
+    "location2Desc":"Positioned strategically between Guptar Ghat and the revered Ram Mandir, our Dharamshala is a central hub for spiritual seekers and business travelers alike. Convenience meets divine serenity in the heart of Ayodhya.",
+      "banner" : "Welcome to Sanatani Sewa Trust - Serving the Community with Love and Compassion",
+      "crewHead" : "Crew at Sanatani sewa Trust",
+      "crewDesc":  "Empowered by passion, united by purpose – our Sanatani Sewa Trust crew, dedicated to serving the community with love and compassion.",
+      "contactHead" : "Contact",
+      "contactDesc" : "Connect with us and let the journey of hospitality and serenity begin – reach out to our team for any inquiries or assistance."
 }
