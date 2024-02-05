@@ -5,6 +5,8 @@ var xprev = 0;
 var yprev = 0;
 
 function circleChaptaKaro() {
+  const circle = document.querySelector("#minicircle");
+
   window.addEventListener("mousemove", function (dets) {
     clearTimeout(timeout);
 
@@ -17,7 +19,6 @@ function circleChaptaKaro() {
     circleMouseFollower(xscale, yscale);
 
     timeout = setTimeout(function () {
-      const circle = document.querySelector("#minicircle");
       circle.style.transform = `translate(${dets.clientX}px, ${dets.clientY + window.scrollY}px) scale(1, 1)`;
     }, 100);
   });
@@ -25,6 +26,12 @@ function circleChaptaKaro() {
   window.addEventListener("mouseleave", function () {
     removeCircle();
   });
+
+  if (window.innerWidth >= 600) {
+    circle.style.display = "block";
+  } else {
+    removeCircle();
+  }
 }
 
 function circleMouseFollower(xscale, yscale) {

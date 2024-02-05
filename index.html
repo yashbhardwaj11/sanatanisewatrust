@@ -5,16 +5,25 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sanatani Sewa Samiti</title>
+  <title data-translate="logo">Sanatani Sewa Trust</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <link href="./img/ram.png" rel="icon">
   <link href="./img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-hVVa8RR66XpK1QDOJK1/uFxWJ2Hd6Dh4N+FP5J73Q/qTvPOhIXa9bGr2d5nxZ8T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-hVVa8RR66XpK1QDOJK1/uFxWJ2Hd6Dh4N+FP5J73Q/qTvPOhIXa9bGr2d5nxZ8T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+    rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
 
   <link href="./vendor/aos/aos.css" rel="stylesheet">
   <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,52 +33,88 @@
   <link href="./vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="./css/style.css" rel="stylesheet">
+
+  <script src="./js/translate.js"></script>
+  <style>
+    #hiddenBanner {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 15px;
+      background-color: #ff0000;
+      /* Red background color */
+      color: #ffffff;
+      /* White text color */
+      border-radius: 10px;
+      /* Rounded corners */
+      transition: opacity 0.5s ease-in-out;
+      /* Fade-in effect */
+    }
+
+    #hiddenBanner img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    #closeButton {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
+
 <body>
+
+  <div id="banner" class="bg-primary text-white p-1 text-center fixed-top">
+    <marquee width="100%" direction="left" data-translate="banner">
+      Welcome to Sanatani Sewa Trust - Serving the Community with Love and Compassion
+    </marquee>
+  </div>
+
+
+
+
   <div id="minicircle"></div>
 
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent mt-4">
     <div class="container d-flex justify-content-between align-items-center">
 
       <div id="logo">
         <!-- <a href="index.html"><img src="./img/logo.png" alt=""></a> -->
-        <h1><a href="index.html">Sanatani Sewa Samiti</a></h1>
+        <h1><a href="index.html" data-translate="logo">Sanatani Sewa Trust</a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">What We Do</a></li>
-          <li><a class="nav-link scrollto" href="#team">Crew</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="#hero" data-translate="home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about" data-translate="about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services" data-translate="facilities">Facilities</a></li>
+          <li><a class="nav-link scrollto" href="#team" data-translate="crew">Crew</a></li>
+          <li><a class="nav-link scrollto" href="#contact" data-translate="contact">Contact</a></li>
+          <li class="nav-item">
+            <select id="languageSelector" class="form-select">
+              <option value="en">English</option>
+              <option value="hi">Hindi</option>
+            </select>
+          </li>
+          <li><button class="btn btn-danger" onclick="showDonationBanner()">Donate Now</button></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </header>
+
+
+
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Welcome to Sanatani Sewa Samiti</h1>
-      <h2>Not for profit organisation</h2>
+      <h1 data-translate="mainHeading">Welcome to Sanatani Sewa Trust</h1>
+      <h2 data-translate="secondHeading">Non Profit Organisation</h2>
       <a href="#about" class="btn-get-started">Get Started</a>
     </div>
   </section>
@@ -81,12 +126,19 @@
         <div class="row about-container">
 
           <div class="col-lg-6 content order-lg-1 order-2">
-            <h2 class="title">Few Words About Us</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <h2 class="title" data-translate="aboutHeading">Few Words About Us</h2>
+            <p data-translate="aboutDesc">
+              In the heart of Ayodhya, our Dharamshala, founded by Alok Aggarwal, Jitesh Goel, and Arun Sharma, stands
+              as a
+              testament to a perfect blend of business and spirituality. Located within a 5km radius of the Ram Mandir,
+              we offer modern amenities including a Kirtan Hall, 100 rooms, a subsidized diagnostic center, Gaushala,
+              and Sita Rasoi serving Satvik food 24/7. Centrally positioned between Guptar Ghat and the Ram Mandir, our
+              Dharamshala is the ideal choice for spiritual seekers alike. Welcome to a haven where every detail
+              reflects our
+              commitment to excellence.
             </p>
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <!-- <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-briefcase"></i></div>
               <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
@@ -102,7 +154,7 @@
               <div class="icon"><i class="bi bi-binoculars"></i></div>
               <h4 class="title"><a href="">Dolor Sitema</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
+            </div> -->
 
           </div>
 
@@ -150,29 +202,87 @@
     <section id="services">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h3 class="section-title">Our Mission</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3 class="section-title" data-translate="facilities">Facilities</h3>
+          <p class="section-description" data-translate="facilitiesDesc"> A haven in the heart of Ayodhya</p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6" data-aos="zoom-in">
             <div class="box">
-              <div class="icon"><a href=""><i class="bi bi-briefcase"></i></a></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <div class="icon"><a href=""><i class="bi bi-house"></i></a></div>
+              <h4 class="title"><a href="" data-translate="kirtanHead">Kirtan Hall</a></h4>
+              <p class="description" data-translate="kirtanDesc">Immerse yourself in spiritual gatherings and events in
+                our spacious Kirtan Hall.
+                Designed for tranquility and reflection, it's a perfect space for moments of devotion and connection.
+              </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="zoom-in">
             <div class="box">
-              <div class="icon"><a href=""><i class="bi bi-card-checklist"></i></a></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <div class="icon"><a href=""><i class="bi bi-door-open"></i></a></div>
+              <h4 class="title"><a href="" data-translate="roomHead">Modern Comfort, 100-Fold</a></h4>
+              <p class="description" data-translate="roomDesc">Experience luxury in each of our 100 well-appointed
+                rooms, where modern amenities
+                are seamlessly integrated to ensure a comfortable and relaxing stay.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="zoom-in">
             <div class="box">
-              <div class="icon"><a href=""><i class="bi bi-bar-chart"></i></a></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <div class="icon"><a href=""><i class="bi bi-hospital"></i></a></div>
+              <h4 class="title"><a href="" data-translate="hospitalHead">Subsidized Diagnostic Center</a></h4>
+              <p class="description" data-translate="hospitalDesc">We care about your well-being. Our subsidized
+                diagnostic center is dedicated to
+                cancer patients, providing essential health services with compassion and support.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fas fa-cow"></i></a></div>
+              <h4 class="title"><a href="" data-translate="gaushalaHead">Gaushala - Sanctuary for Cows</a></h4>
+              <p class="description" data-translate="gaushalaDesc">Embrace the serenity of our Gaushala, a haven for
+                cows. Our commitment to
+                compassion extends to all living beings, creating a peaceful coexistence.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fas fa-utensils"></i></a></div>
+              <h4 class="title"><a href="" data-translate="kitchen">Sita Rasoi - 24/7 Satvik Dining</a></h4>
+              <p class="description" data-translate="kitchenDesc">Indulge in the essence of vegetarianism at Sita Rasoi,
+                our 24-hour eatery serving
+                Satvik food. A culinary delight, it offers a divine experience for your taste buds.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fas fa-car"></i></a></div>
+              <h4 class="title" data-translate="parking"><a href="">Seamless Parking</a></h4>
+              <p class="description" data-translate="parkingDesc">Enjoy a worry-free stay with our secure and spacious
+                parking area. Your convenience
+                is our priority, ensuring a hassle-free experience from the moment you arrive.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fas fa-tree"></i></a></div>
+              <h4 class="title"><a href="" data-translate="location">Serene Location - Saryu Riverfront:</a></h4>
+              <p class="description" data-translate="locationDesc">Delight in the picturesque views along the Saryu
+                Riverfront. Our Dharamshala's serene
+                location provides a tranquil backdrop for a truly peaceful stay.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fas fa-bullseye"></i></a></div>
+              <h4 class="title"><a data-translate="location2" href="">Central Convenience - Between Gupta Chat and Ram
+                  Mandir</a></h4>
+              <p class="description" data-translate="location2Desc">Positioned strategically between Guptar Ghat and the
+                revered Ram Mandir, our Dharamshala
+                is a central hub for spiritual seekers and business travelers alike. Convenience meets divine serenity
+                in the heart of Ayodhya.</p>
             </div>
           </div>
         </div>
@@ -186,7 +296,8 @@
         <div class="row" data-aos="zoom-in">
           <div class="col-lg-9 text-center text-lg-start">
             <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="cta-text">"Embark on a soulful journey with us. Book your divine retreat now and experience the
+              perfect blend of spirituality and comfort. Your tranquil escape awaits!"</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
             <a class="cta-btn align-middle" href="#">Call To Action</a>
@@ -282,12 +393,20 @@
       </div>
     </section>End Portfolio Section -->
 
+    <!-- Hidden Banner -->
+    <div id="hiddenBanner" class="bg-danger text-white rounded p-3">
+      <span id="closeButton" onclick="closeBanner()">X</span>
+      <img src="./img/ram-idol.png" alt="Donate Image">
+      <p>Donate for the cause of building the Dharamshala</p>
+      <button onclick="showDonationBanner()" class="btn btn-light">Donate Now</button>
+    </div>
     <!-- ======= Team Section ======= -->
     <section id="team">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h3 class="section-title">Crew at Sanatani sewa samiti</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3 class="section-title" data-translate="crewHead">Crew at Sanatani sewa Trust</h3>
+          <p class="section-description" data-translate="crewDesc">Empowered by passion, united by purpose – our
+            Sanatani Sewa Trust crew, dedicated to serving the community with love and compassion.</p>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -350,18 +469,65 @@
       </div>
     </section><!-- End Team Section -->
 
+    <!-- Donation Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="donationModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Donation Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="hideDonationBanner()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="donorname" placeholder="Enter your name">
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone:</label>
+              <input type="tel" class="form-control" id="donorphone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="donoremail" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-3">
+              <label for="amount" class="form-label">Amount (INR):</label>
+              <input type="number" class="form-control" id="donoramount" placeholder="Enter donation amount">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+              onclick="hideDonationBanner()">Close</button>
+            <button type="button" class="btn btn-success" onclick="initiatePayment()">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- ======= Contact Section ======= -->
     <section id="contact">
       <div class="container">
         <div class="section-header">
-          <h3 class="section-title">Contact</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3 class="section-title" data-translate="contactHead">Contact</h3>
+          <p class="section-description" data-translate="contactDesc">Connect with us and let the journey of hospitality
+            and serenity begin – reach
+            out to our team for any inquiries or assistance.</p>
         </div>
       </div>
 
       <!-- Uncomment below if you wan to use dynamic maps -->
       <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.4312833612903!2d82.19349627915877!3d26.794392805155255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a07eb258c27ab%3A0x5158186a1fb22666!2sJanmabhoomi%20Path%2C%20Sai%20Nagar%2C%20Ayodhya%2C%20Uttar%20Pradesh%20224123!5e0!3m2!1sen!2sin!4v1706357474594!5m2!1sen!2sin" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.4312833612903!2d82.19349627915877!3d26.794392805155255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a07eb258c27ab%3A0x5158186a1fb22666!2sJanmabhoomi%20Path%2C%20Sai%20Nagar%2C%20Ayodhya%2C%20Uttar%20Pradesh%20224123!5e0!3m2!1sen!2sin!4v1706357474594!5m2!1sen!2sin"
+        width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="container mt-5">
         <div class="row justify-content-center">
@@ -371,66 +537,144 @@
             <div class="info">
               <div>
                 <i class="bi bi-geo-alt"></i>
-                <p>Saryu River Front<br>Ayodhya, IN 224123</p>
+                <p>F-29 T/F Mansarovar<br>New Delhi, IN 110032</p>
               </div>
 
+
               <div>
-                <i class="bi bi-envelope"></i>
-                <p>yash@gmail.com</p>
+                <i class="bi bi-geo-alt"></i>
+                <p> Dharamshala Address :<br>Manjha jamthara ,Ayodhya.</p>
+                <p> Within 5km. Radius of Ram temple and Guptar Ghat</p>
               </div>
 
               <div>
                 <i class="bi bi-phone"></i>
-                <p>+91 9999999999</p>
+                <p><a href="tel:+919313708313">+91 9313708313</a></p>
               </div>
+
             </div>
 
-            <div class="social-links">
+            <!-- <div class="social-links">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+            </div> -->
 
           </div>
 
           <div class="col-lg-5 col-md-8">
             <div class="form">
-              <form action="" method="post" role="form" class="php-email-form">
+              <form id="form">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" required>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  <textarea class="form-control" id="message" name="Message" rows="5" placeholder="Message"
+                    required></textarea>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="text-center mt-3">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+
               </form>
             </div>
           </div>
 
         </div>
-
-      </div>
     </section><!-- End Contact Section -->
 
   </main>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+  <script>
+    function resetDonationForm() {
+      // Reset form fields to their initial state
+      document.getElementById('donorname').value = "";
+      document.getElementById('donoremail').value = "";
+      document.getElementById('donorphone').value = "";
+      document.getElementById('donoramount').value = "";
+    }
+    function showDonationModal() {
+      $('#donationModal').modal('show');
+    }
+    let rzpInstance;
+    function hideDonationBanner() {
+      // Close the Razorpay modal if it's open
+      if (rzpInstance) {
+        rzpInstance.close();
+      }
+      resetDonationForm();
+      $('#donationModal').modal('hide');
+    }
+    function showDonationBanner() {
+
+      $('#donationModal').modal('show');
+    }
+
+
+    function initiatePayment() {
+      var donorName = document.getElementById('donorname').value;
+      var donorEmail = document.getElementById('donoremail').value;
+      var donorPhone = document.getElementById('donorphone').value;
+      var amount = document.getElementById('donoramount').value;
+
+      if (donorName != "" && donorEmail != "" && donorPhone != "" && amount != "") {
+        const apiKey = "rzp_test_CGUiyqxHq0gdv1";
+        const options = {
+          key: apiKey,
+          amount: amount * 100,
+          name: "Sanatani Sewa Trust",
+          description: "Donation",
+          image: "./img/ram.png",
+          handler: function (response) {
+            console.log("Payment successful:", response);
+            alert("Thank you for your donation!");
+            resetDonationForm();
+            $('#donationModal').modal('hide');
+          },
+          prefill: {
+            name: donorName,
+            email: donorEmail,
+            contact: donorPhone,
+          },
+          theme: {
+            color: "#528FF0",
+          },
+        };
+        rzpInstance = new Razorpay(options);
+        rzpInstance.on('payment.success', function (response) {
+          console.log("Payment successful:", response);
+          alert("Thank you for your donation!");
+          resetDonationForm();
+          $('#donationModal').modal('hide');
+        });
+
+        // Event listener for payment failure
+        rzpInstance.on('payment.error', function (response) {
+          console.log("Payment failed:", response.error.reason);
+          alert("Payment failed. Please try again.");
+          resetDonationForm();
+        });
+        rzpInstance.open();
+      } else {
+        alert("Empty field not allowed");
+      }
+    }
+
+
+
+  </script>
+
 
   <script src="./vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="./vendor/aos/aos.js"></script>
@@ -442,11 +686,11 @@
 
   <script src="./js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-
-    <script src="././js/script.js"></script>
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 
