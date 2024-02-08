@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function translate(language) {
   console.log(language);
   fetch(`languages/${language}.json`)
@@ -85,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return null;
   }
 });
-=======
 function translate(language) {
   console.log(language);
   fetch(`languages/${language}.json`)
@@ -172,4 +170,3 @@ document.addEventListener("DOMContentLoaded", function () {
     return null;
   }
 });
->>>>>>> 7c4d679353d9261a954d84a0163e0abbebdd0cf2

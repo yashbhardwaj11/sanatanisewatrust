@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "mainHeading" : "WELCOME TO SANATANI SEWA Trust",
     "logo" : "SANATANI SEWA Trust",
@@ -33,40 +32,4 @@
       "crewDesc":  "Empowered by passion, united by purpose – our Sanatani Sewa Trust crew, dedicated to serving the community with love and compassion.",
       "contactHead" : "Contact",
       "contactDesc" : "Connect with us and let the journey of hospitality and serenity begin – reach out to our team for any inquiries or assistance."
-=======
-{
-    "mainHeading" : "WELCOME TO SANATANI SEWA Trust",
-    "logo" : "SANATANI SEWA Trust",
-    "secondHeading" : "Non Profit Organisation",
-    "aboutButton" : "Get Started",
-    "aboutHeading" : "Few Words About Us",
-    "aboutDesc" : "In the heart of Ayodhya, our Dharamsala, founded by Alok Aggarwal, Jitesh Goel, and Arun Sharma, stands as a testament to a perfect blend of business and spirituality. Located within a 5km radius of the Ram Mandir, we offer modern amenities including a Kirtan Hall, 100 rooms, a subsidized diagnostic center, Gaushala, and Sita Rasoi serving Satvik food 24/7. Centrally positioned between Guptar Ghat and the Ram Mandir, our Dharamshala is the ideal choice for spiritual seekers alike. Welcome to a haven where every detail reflects our commitment to excellence.",
-    "home":"Home",
-    "about":"About",
-    "facilities":"Facilities",
-    "crew":"Crew",
-    "contact":"Contact",
-    "facilitiesDesc":"A haven in the heart of Ayodhya",
-    "kirtanHead":"KIRTAN HALL",
-    "kirtanDesc":"Immerse yourself in spiritual gatherings and events in our spacious Kirtan Hall. Designed for tranquility and reflection, it's a perfect space for moments of devotion and connection.",
-    "roomHead":"MODERN COMFORT, 100-FOLD",
-    "roomDesc":"Experience luxury in each of our 100 well-appointed rooms, where modern amenities are seamlessly integrated to ensure a comfortable and relaxing stay.",
-    "hospitalHead":"SUBSIDIZED DIAGNOSTIC CENTER",
-    "hospitalDesc":"We care about your well-being. Our subsidized diagnostic center is dedicated to cancer patients, providing essential health services with compassion and support.",
-    "gaushalaHead":"GAUSHALA - SANCTUARY FOR COWS",
-    "gaushalaDesc":"Embrace the serenity of our Gaushala, a haven for cows. Our commitment to compassion extends to all living beings, creating a peaceful coexistence.",
-    "kitchen":"SITA RASOI - 24/7 SATVIK DINING",
-    "kitchenDesc":"Indulge in the essence of vegetarianism at Sita Rasoi, our 24-hour eatery serving Satvik food. A culinary delight, it offers a divine experience for your taste buds.",
-    "parking":"SEAMLESS PARKING",
-    "parkingDesc":"Enjoy a worry-free stay with our secure and spacious parking area. Your convenience is our priority, ensuring a hassle-free experience from the moment you arrive.",
-    "location":"SERENE LOCATION - SARYU RIVERFRONT",
-    "locationDesc":"Delight in the picturesque views along the Saryu Riverfront. Our Dharamshala's serene location provides a tranquil backdrop for a truly peaceful stay",
-    "location2":"CENTRAL CONVENIENCE - BETWEEN GUPTAR GHAT AND RAM MANDIR",
-    "location2Desc":"Positioned strategically between Guptar Ghat and the revered Ram Mandir, our Dharamshala is a central hub for spiritual seekers and business travelers alike. Convenience meets divine serenity in the heart of Ayodhya.",
-      "banner" : "Welcome to Sanatani Sewa Trust - Serving the Community with Love and Compassion",
-      "crewHead" : "Crew at Sanatani sewa Trust",
-      "crewDesc":  "Empowered by passion, united by purpose – our Sanatani Sewa Trust crew, dedicated to serving the community with love and compassion.",
-      "contactHead" : "Contact",
-      "contactDesc" : "Connect with us and let the journey of hospitality and serenity begin – reach out to our team for any inquiries or assistance."
->>>>>>> 7c4d679353d9261a954d84a0163e0abbebdd0cf2
 }
